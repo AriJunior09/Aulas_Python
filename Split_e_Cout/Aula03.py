@@ -1,16 +1,14 @@
 # APRENDENDO A USAR O COUNT PARA CONTAR: LETRAS, PALAVRAS OU CARACTERES
 
-frase01 = "Eu gosto de programar"
-frase02 = "Abacaxi com ameixa para fazer vitamina"
-frase03 = "Precisa comprar: Abacaxi, Ameixa e Leite"
-frase04 = "Camisa-Calça-Moleton-Tênis-Sapatilha"
+frase01 = "amo amoras e o hipopotamo ama pamonhas com ramos de amoreira"
 
-lista01 = frase01.count("a")  # Conta quantas letras "a" tem na frase (somente minúscula)
-lista02 = frase02.count("a")  # Conta quantas letras "a" tem na frase (somente minúscula)
-lista03 = frase03.count("a")  # Conta quantas letras "a" tem na frase (somente minúscula)
-lista04 = frase04.count("a")  # Conta quantas letras "a" tem na frase (somente minúscula)
+contagem1 = frase01.count("amo")  # Conta quantas vezes aparece a palacra "amo" na frase
+# PROBLEMA É QUE DESSA FORMA, CONTA ATÉ DENTRO DAS PALAVRAS. 
+print("Contagem: ", contagem1)    # A saída será 6 (mas está errado!)
 
-print(lista01)
-print(lista02)
-print(lista03)
-print(lista04)
+
+# PARA CORRIGIR ISSO PRECISAMOS SEPARAR A FRASE EM UMA LISTA DE PALAVRAS E VERIFICAR UMA A UMA
+separacao = frase01.split()        # Separando em lista de palavras
+contagem2 = separacao.count("amo") # Contando todas as palavras "amo" na lista
+print("Contagem: ", contagem2)     # Mostrando a contagem correta
+
