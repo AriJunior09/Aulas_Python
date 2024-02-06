@@ -7,7 +7,7 @@ frase04 = "Camisa-Calça-Moleton-Tênis-Sapatilha"
 
 lista01 = frase01.split()    # Separando as palavras pelo espaço (padrão)
 lista02 = frase02.split("a") # Separando pela letra "a" no caso remove apenas em minúsculo
-lista03 = frase03.split(",") # Separando pela visgula
+lista03 = frase03.split(",") # Separando pela virgula
 lista04 = frase04.split("-") # Separando pelo "-"
 
 print(lista01)
