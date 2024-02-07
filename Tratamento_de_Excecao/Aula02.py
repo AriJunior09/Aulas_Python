@@ -1,3 +1,5 @@
+# USANDO O REMOVE PARA REMOVER ARQUIVOS
+
 import os
 arquivo_a_remover = "arquivoParaRemover.txt"
 try:
